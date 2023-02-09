@@ -2,6 +2,7 @@ import { Box, Container, Heading, Text, Center } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Renderer from "./Renderer";
 import Navbar from "./Navbar";
+import { color1alpha, color2 } from "./colors";
 
 const HomeRoot = () => {
   return (
@@ -12,9 +13,9 @@ const HomeRoot = () => {
         <Box zIndex={10} position="relative">
           <motion.div animate={{ y: 100 }}>
             <Center
-              backgroundColor="whiteAlpha.500"
+              backgroundColor={color1alpha}
               h="4rem"
-              color="white"
+              color={color2}
               borderRadius="1rem"
               margin="1rem"
               textAlign="center"
@@ -22,24 +23,24 @@ const HomeRoot = () => {
               Hi! I'm Javier and I'm passionate about development.
             </Center>
             <Heading
-              color="white"
+              color={color2}
               fontFamily="Nunito"
               borderBottom="6px solid #ffffff40"
             >
               Javier Sepúlveda
             </Heading>
-            <Text color="whiteAlpha.800">
+            <Text color={color2}>
               Software developer (MSc Civil Engineering)
             </Text>
             <Heading
-              color="white"
+              color={color2}
               fontFamily="Nunito"
               size="md"
               marginTop="2rem"
             >
               Bio
             </Heading>
-            <Text color="whiteAlpha.800" textAlign={"justify"}>
+            <Text color={color2} textAlign={"justify"}>
               Javier is a full-stack developer based in Madrid. He has
               experience in different technologies for the frontend (React,
               Angular), backend (Express.js, Micronaut) and infrastructure (AWS,
@@ -48,7 +49,7 @@ const HomeRoot = () => {
               to draw and paint and enjoying nature.
             </Text>
             <Box height="50px" />
-            <Text color="whiteAlpha.300" textAlign={"center"}>
+            <Text color={color2} textAlign={"center"}>
               Designed by Javier Sepúlveda
             </Text>
             <Box height="60px" />

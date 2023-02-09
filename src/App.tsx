@@ -1,10 +1,13 @@
 import { Box, ChakraProvider } from "@chakra-ui/react";
 import HomeRoot from "./home/HomeRoot";
 import { color1 } from "./home/colors";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Curriculum } from "./cv/Curriculum";
 
-function App() {
-  return (
-    <ChakraProvider>
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
       <Box
         className="App"
         backgroundColor={color1}
@@ -14,6 +17,18 @@ function App() {
       >
         <HomeRoot />
       </Box>
+    ),
+  },
+  {
+    path: "/cv",
+    element: <Curriculum />,
+  },
+]);
+
+function App() {
+  return (
+    <ChakraProvider>
+      <RouterProvider router={router} />
     </ChakraProvider>
   );
 }

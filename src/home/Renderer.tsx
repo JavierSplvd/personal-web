@@ -6,8 +6,8 @@ import { color3 } from "./colors";
 const Box3D = (props: any) => {
   const mesh = useRef();
   useFrame(() => {
-    (mesh.current as any).rotation.x += 0.01;
-    (mesh.current as any).rotation.y += 0.01;
+    (mesh.current as any).rotation.x += 0.001;
+    (mesh.current as any).rotation.y += 0.015;
     (mesh.current as any).rotation.z += 0.01;
   });
 

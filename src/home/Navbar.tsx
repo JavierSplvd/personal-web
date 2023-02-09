@@ -30,7 +30,7 @@ export default function Navbar() {
     <Box position="sticky" top={0} zIndex={17}>
       <Flex
         backgroundColor={color1alpha}
-        color="white"
+        color={color2}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -277,7 +277,7 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "Art",
-    href: "https://www.instagram.com/javiersplvd/",
+    href: "https://www.instagram.com/javier.splvd.art/",
     external: true,
   },
 ];
