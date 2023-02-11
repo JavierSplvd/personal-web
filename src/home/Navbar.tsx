@@ -280,4 +280,9 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "https://www.instagram.com/javier.splvd.art/",
     external: true,
   },
+  {
+    label: "Curriculum",
+    href: "/cv",
+    external: false,
+  },
 ];
