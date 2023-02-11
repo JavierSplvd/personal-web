@@ -12,7 +12,12 @@ export const JobTitle: React.FC<JobTitleProps> = (props) => {
   return (
     <Box width="100%" position="relative" marginTop="1rem" marginBottom="1rem">
       <Flex justifyContent="space-between" gap="10px" marginRight="3.5rem">
-        <Text height="1rem" marginRight="1rem">
+        <Text
+          height="1rem"
+          marginRight="1rem"
+          letterSpacing="0.1rem"
+          fontWeight="semibold"
+        >
           {props.title}
         </Text>
         <Box
