@@ -1,8 +1,9 @@
-import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { color4 } from "../home/colors";
 import { ContactEducationAndSkills } from "./ContactEducationAndSkills";
 import { AboutAndExperience } from "./AboutAndExperience";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export const Curriculum: React.FC<{}> = (props: any) => {
   return (
@@ -55,7 +56,12 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           fontStyle="italic"
           fontSize="0.6rem"
         >
-          Created with React+Chakra-UI
+          Created with React+Chakra-UI (
+          <Link href="https://github.com/JavierSplvd/personal-web">
+            Github
+            <ExternalLinkIcon mx="2px" />
+          </Link>
+          )
         </Text>
       </Box>
     </Flex>

@@ -1,5 +1,10 @@
-import { EmailIcon, PhoneIcon, Search2Icon } from "@chakra-ui/icons";
-import { Divider, Flex, GridItem, Text } from "@chakra-ui/react";
+import {
+  ChatIcon,
+  EmailIcon,
+  ExternalLinkIcon,
+  PhoneIcon
+} from "@chakra-ui/icons";
+import { Divider, Flex, GridItem, Link, Text } from "@chakra-ui/react";
 import { color2 } from "../home/colors";
 import { HeadingCV } from "./HeadingCV";
 
@@ -25,8 +30,10 @@ export function ContactEducationAndSkills() {
             textAlign="center"
             paddingRight="0.5rem"
           >
-            <Search2Icon boxSize="2rem" marginBottom="0.5rem" />
-            <Text>San Fernando de Henares, Madrid</Text>
+            <ChatIcon boxSize="2rem" marginBottom="0.5rem" />
+            <Link href="https://www.linkedin.com/in/javier-sepulveda-verdugo/">
+              My LinkedIn <ExternalLinkIcon mx="2px" />
+            </Link>
             <Divider margin="0.5rem 0rem" width="8rem" />
             <PhoneIcon boxSize="2rem" marginBottom="0.5rem" />
             <Text>+34 629 644 848</Text>
