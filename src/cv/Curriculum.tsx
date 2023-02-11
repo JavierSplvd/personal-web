@@ -1,28 +1,30 @@
 import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import { color4 } from "../home/colors";
-import { LateralBar } from "./LateralBar";
-import { MainContent } from "./MainContent";
+import { ContactEducationAndSkills } from "./ContactEducationAndSkills";
+import { AboutAndExperience } from "./AboutAndExperience";
 
 export const Curriculum: React.FC<{}> = (props: any) => {
   return (
     <Flex
+      minWidth="21cm"
+      minHeight="29.7cm"
       width="100vw"
       height="100vh"
       justifyContent="center"
-      backgroundColor="gray.200"
+      backgroundImage="radial-gradient(circle, #e1e1e1, gray)"
     >
       <Box
-        width="71vh"
-        height="100vh"
+        width="21cm"
+        height="29.7cm"
         backgroundColor="white"
-        boxShadow="5px 5px 5px 5px gray"
+        // boxShadow="5px 5px 5px 5px gray"
         position="relative"
       >
         <Flex
           id="header"
           width="100%"
-          height="20vh"
+          height="20%"
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
@@ -38,13 +40,13 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           <Text letterSpacing="0.4rem">SOFTWARE DEVELOPER</Text>
         </Flex>
         <Grid
-          height="80vh"
+          height="80%"
           templateRows="repeat(1, 1fr)"
           templateColumns="repeat(3, 1fr)"
           gap={4}
         >
-          <LateralBar />
-          <MainContent />
+          <ContactEducationAndSkills />
+          <AboutAndExperience />
         </Grid>
         <Text
           position="absolute"

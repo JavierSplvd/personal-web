@@ -3,7 +3,7 @@ import { Divider, Flex, GridItem, Text } from "@chakra-ui/react";
 import { color2 } from "../home/colors";
 import { HeadingCV } from "./HeadingCV";
 
-export function LateralBar() {
+export function ContactEducationAndSkills() {
   return (
     <>
       <GridItem
@@ -13,7 +13,7 @@ export function LateralBar() {
         color="white"
         fontSize="0.7rem"
         paddingLeft="2rem"
-        paddingTop="1rem"
+        paddingTop="3rem"
       >
         <Flex flexDirection="column">
           <HeadingCV variant="light">CONTACT</HeadingCV>
@@ -25,13 +25,13 @@ export function LateralBar() {
             textAlign="center"
             paddingRight="0.5rem"
           >
-            <Search2Icon boxSize="2rem" />
-            <Text>Maria Teresa de Leon 22, San Fernando de Henares</Text>
+            <Search2Icon boxSize="2rem" marginBottom="0.5rem" />
+            <Text>San Fernando de Henares, Madrid</Text>
             <Divider margin="0.5rem 0rem" width="8rem" />
-            <PhoneIcon boxSize="2rem" />
+            <PhoneIcon boxSize="2rem" marginBottom="0.5rem" />
             <Text>+34 629 644 848</Text>
             <Divider margin="0.5rem 0rem" width="8rem" />
-            <EmailIcon boxSize="2rem" />
+            <EmailIcon boxSize="2rem" marginBottom="0.5rem" />
             <Text wordBreak="break-word">
               javier.sepulveda.verdugo@gmail.com
             </Text>
@@ -60,7 +60,7 @@ export function LateralBar() {
           </Flex>
 
           <HeadingCV variant="light">SKILLS</HeadingCV>
-          <Text>Certificado Inglés C1 Advanced</Text>
+          <Text>Cambridge C1 Advanced</Text>
           <Text>AWS Cloud</Text>
           <Text>Java / Kotlin</Text>
           <Text>Typescript + Node.js + React</Text>
