@@ -33,12 +33,11 @@ export const Curriculum: React.FC<{}> = (props: any) => {
         >
           <Heading
             fontSize="3.5rem"
-            letterSpacing="0.5rem"
-            fontFamily="Bebas Neue"
+            fontFamily="Noto Sans TC"
           >
             JAVIER SEPÚLVEDA
           </Heading>
-          <Text letterSpacing="0.15rem">
+          <Text letterSpacing="0.22rem">
             <b>FULLSTACK DEVELOPER</b> - 5 YEARS OF EXPERIENCE
           </Text>
         </Flex>
