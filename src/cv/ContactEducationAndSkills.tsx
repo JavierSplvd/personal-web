@@ -4,15 +4,7 @@ import {
   ExternalLinkIcon,
   PhoneIcon,
 } from "@chakra-ui/icons";
-import {
-  Badge,
-  Divider,
-  Flex,
-  GridItem,
-  Link,
-  Text,
-  Stack,
-} from "@chakra-ui/react";
+import { Badge, Divider, Flex, GridItem, Link, Text } from "@chakra-ui/react";
 import { color2 } from "../home/colors";
 import { HeadingCV } from "./HeadingCV";
 
@@ -26,7 +18,7 @@ export function ContactEducationAndSkills() {
         color="white"
         fontSize="0.7rem"
         paddingLeft="2rem"
-        paddingTop="3rem"
+        paddingTop="1rem"
       >
         <Flex flexDirection="column">
           <HeadingCV borderLeft={true} variant="light">
@@ -42,15 +34,18 @@ export function ContactEducationAndSkills() {
           <Flex direction="row" flexWrap="wrap" style={{ gap: "0.5rem" }}>
             <Badge>Java</Badge>
             <Badge>Kotlin</Badge>
-            <Badge>Typescript</Badge>
+            <Badge>C#</Badge>
             <Badge>Node.js</Badge>
+            <Badge>Typescript</Badge>
             <Badge>React</Badge>
+            <Badge>Angular</Badge>
             <Badge>AWS</Badge>
             <Badge>Github</Badge>
             <Badge>Gitlab</Badge>
             <Badge>Unity</Badge>
             <Badge>3D modelling</Badge>
             <Badge>JIRA</Badge>
+            <Badge>Figma</Badge>
           </Flex>
           <HeadingCV borderLeft={true} variant="light">
             EDUCATION
@@ -59,12 +54,12 @@ export function ContactEducationAndSkills() {
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
-            height="12rem"
+            height="10rem"
             textAlign="center"
             paddingRight="0.5rem"
           >
             <Text>
-              Master en Ingeniería de Caminos, Canales y Puertos (UPM)
+              Master Civil Engineering (UPM)
             </Text>
             <Text fontStyle="italic">2016 - 2018</Text>
             <Divider margin="0.5rem 0rem" width="8rem" />
@@ -73,7 +68,7 @@ export function ContactEducationAndSkills() {
             <Text fontStyle="italic">2015 (6 months)</Text>
             <Divider margin="0.5rem 0rem" width="8rem" />
 
-            <Text>Grado en Ingeniería Civil y Territorial (UPM)</Text>
+            <Text>Degree Civil Engineering (UPM)</Text>
             <Text fontStyle="italic">2011 - 2016</Text>
           </Flex>
 

@@ -1,4 +1,4 @@
-import { Box, GridItem, Text } from "@chakra-ui/react";
+import { Box, Divider, GridItem, Text } from "@chakra-ui/react";
 import React from "react";
 import { HeadingCV } from "./HeadingCV";
 import { JobTitle } from "./JobTitle";
@@ -13,7 +13,6 @@ export function AboutAndExperience() {
         colSpan={2}
         bg="white"
         paddingRight="2rem"
-        paddingTop="1rem"
         fontSize="0.75rem"
         textAlign="justify"
       >
@@ -21,11 +20,11 @@ export function AboutAndExperience() {
           ABOUT ME
         </HeadingCV>
         <Text>
-          I am a full-stack developer based in Madrid. I have a background in
-          civil engineering but have worked mostly in software development. I
-          have experience in different technologies for the frontend (React,
-          Angular), backend (Express.js, Micronaut) and infrastructure (AWS). I
-          consider myself curious, open-minded and I love to learn new things.
+          I am a <b>full-stack developer</b> based in Madrid. I have a
+          background in civil engineering and I have focused my career in
+          software development. I have experience in both frontend, backend and
+          I have managed the infrastructure for several projects. I consider
+          myself curious, open-minded, creative and I love to learn new things.
         </Text>
 
         <Box>
@@ -39,25 +38,28 @@ export function AboutAndExperience() {
               start="2021"
             ></JobTitle>
             <Text>
-              Development of backend applications using Node.js and Express for
-              multiple internal departments to improve their workflows. These
-              backends feed other frontend application developed with typescript
-              and react that served as control dashboard to visualize existing
-              data and as a way of input new data. Deployment in AWS with
-              Cloudformation, CICD pipelines with Github actions.
+              I managed the <b>development and release</b> of multiple
+              applications within a short scope of time. This applications
+              improve the workflows of other Arup teams, incluiding teams from
+              other offices. The stack of technologies is Node.js with Express,
+              React with Redux, PostgreSQL database and the AWS cloud. The CI/CD
+              was handled with Github Actions.
             </Text>
+            <Divider margin="0.5rem 0rem" />
             <Text>
-              Development of microservices using Springboot with JPA (hibernate)
-              to create a digital twin platform for an office building. These
-              microservices deal with realtime data from devices (temperature,
-              sound, energy consumption) and make some processing or handle
-              notifications.
+              Development of <b>microservices using Springboot</b> with JPA
+              (hibernate) to create a digital twin platform for buildings. I
+              worked closely with the London team remotely. These microservices
+              deal with realtime data from devices (temperature, sound, energy
+              consumption) and make some processing or handle notifications.
             </Text>
+            <Divider margin="0.5rem 0rem" />
             <Text>
-              Creating 3D applications in Unity for web and mobile platforms to
-              visualize the construction process of bridges of different
-              typologies. There are special views and features for the complex
-              parts of the bridge.
+              Delivering a <b>mobile application</b> for the Bridges to
+              Prosperity NGO. I received the 3D models for the bridges and then
+              adapted them to Unity. I also developed the features for the
+              application, writing code on C# and coordinated with the
+              Netherlands office to meet the deadline.
             </Text>
           </Box>
           <Box>
@@ -69,11 +71,12 @@ export function AboutAndExperience() {
             <Text>
               Developing an application for solar panels instalations, for
               individual customers and for business. The application was a web
-              app available to iOS and Android. Full stack development with
+              app available to iOS and Android. I had a full stack role with
               Angular on the front and Kotlin on the back. For the persistence
-              layer using Postgres and MongoDB. Developing using best practices:
-              clean architecture and TDD.
+              layer I used Postgres and MongoDB. Developing using best
+              practices:<b> clean architecture and TDD.</b>
             </Text>
+            <Divider margin="0.5rem 0rem" />
             <Text>
               Improvement of an existing application for the Human Resources
               department of a company. The existing code base used obsolete
@@ -89,16 +92,15 @@ export function AboutAndExperience() {
             ></JobTitle>
             <Text>
               Developing automation scripts (Python) for the seismic assesment
-              of buildings and foundations in the Netherlands. These scripts
+              of structures and foundations in the Netherlands. These scripts
               leverage the APIs of different geotechnical applications to
-              streamline the calculations. The results wre aggregated and
-              processed to create visualizations.
+              streamline the calculations.
             </Text>
+            <Divider margin="0.5rem 0rem" />
             <Text>
-              Data gathering and processing of traffic data from Madrid to help
-              the Transport team with the Due Diligence process. The data was
-              collected from open sources over the course of a month and
-              transformed so the engineers could take some insight from it.
+              Data gathering and processing of open traffic data from Madrid to
+              support the Transport team. I collected the data and transformed
+              it to a format useful to the transport engineers.
             </Text>
           </Box>
         </Box>

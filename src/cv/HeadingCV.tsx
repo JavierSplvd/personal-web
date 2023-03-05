@@ -22,7 +22,7 @@ export const HeadingCV: React.FC<HeadingCVProps> = (props) => {
         borderRightRadius={props.borderRight ? "0.5rem" : ""}
         height="2rem"
         paddingLeft="1rem"
-        marginTop="1rem"
+        marginTop="2rem"
         marginBottom="1rem"
         lineHeight="2rem"
       >
