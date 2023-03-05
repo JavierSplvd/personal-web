@@ -29,7 +29,6 @@ export default function Navbar() {
   return (
     <Box position="sticky" top={0} zIndex={17}>
       <Flex
-        backgroundColor={color1alpha}
         color={color2}
         minH={"60px"}
         py={{ base: 2 }}

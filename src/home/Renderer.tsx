@@ -13,7 +13,7 @@ const Box3D = (props: any) => {
 
   return (
     <mesh {...props} ref={mesh}>
-      <boxGeometry args={[3, 3, 3]} />
+      <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={color3} />
     </mesh>
   );
@@ -22,7 +22,7 @@ const Box3D = (props: any) => {
 const Renderer = (props: any) => {
   return (
     <Box position="absolute" left={0} right={0} top={0} zIndex={5}>
-      <Canvas style={{ height: "300px" }}>
+      <Canvas style={{ height: "100vh" }}>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Box3D position={[0, 0, 0]} />

@@ -12,7 +12,6 @@ const router = createBrowserRouter([
       <Box
         className="App"
         backgroundColor={color1}
-        minHeight="calc(100vh + 100px)"
         height="100%"
         width="100%"
       >
