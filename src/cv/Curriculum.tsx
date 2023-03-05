@@ -38,7 +38,9 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           >
             JAVIER SEPÚLVEDA
           </Heading>
-          <Text letterSpacing="0.4rem">SOFTWARE DEVELOPER</Text>
+          <Text letterSpacing="0.15rem">
+            <b>FULLSTACK DEVELOPER</b> - 5 YEARS OF EXPERIENCE
+          </Text>
         </Flex>
         <Grid
           height="80%"
@@ -59,6 +61,10 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           Created with React+Chakra-UI (
           <Link href="https://github.com/JavierSplvd/personal-web">
             Github
+            <ExternalLinkIcon mx="2px" />
+          </Link>
+          <Link href="https://www.javiersepulveda.es/cv">
+            Web
             <ExternalLinkIcon mx="2px" />
           </Link>
           )

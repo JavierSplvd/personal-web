@@ -17,7 +17,9 @@ export function AboutAndExperience() {
         fontSize="0.75rem"
         textAlign="justify"
       >
-        <HeadingCV variant="dark">ABOUT ME</HeadingCV>
+        <HeadingCV borderRight={true} variant="dark">
+          ABOUT ME
+        </HeadingCV>
         <Text>
           I am a full-stack developer based in Madrid. I have a background in
           civil engineering but have worked mostly in software development. I
@@ -27,7 +29,9 @@ export function AboutAndExperience() {
         </Text>
 
         <Box>
-          <HeadingCV variant="dark">EXPERIENCE</HeadingCV>
+          <HeadingCV borderRight={true} variant="dark">
+            EXPERIENCE
+          </HeadingCV>
           <Box>
             <JobTitle
               title="SOFTWARE DEVELOPER, ARUP"

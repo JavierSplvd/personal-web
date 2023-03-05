@@ -2,9 +2,17 @@ import {
   ChatIcon,
   EmailIcon,
   ExternalLinkIcon,
-  PhoneIcon
+  PhoneIcon,
 } from "@chakra-ui/icons";
-import { Divider, Flex, GridItem, Link, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Divider,
+  Flex,
+  GridItem,
+  Link,
+  Text,
+  Stack,
+} from "@chakra-ui/react";
 import { color2 } from "../home/colors";
 import { HeadingCV } from "./HeadingCV";
 
@@ -21,29 +29,32 @@ export function ContactEducationAndSkills() {
         paddingTop="3rem"
       >
         <Flex flexDirection="column">
-          <HeadingCV variant="light">CONTACT</HeadingCV>
-          <Flex
-            flexDirection="column"
-            justifyContent="center"
-            alignItems="center"
-            height="14rem"
-            textAlign="center"
-            paddingRight="0.5rem"
-          >
-            <ChatIcon boxSize="2rem" marginBottom="0.5rem" />
-            <Link href="https://www.linkedin.com/in/javier-sepulveda-verdugo/">
-              My LinkedIn <ExternalLinkIcon mx="2px" />
-            </Link>
-            <Divider margin="0.5rem 0rem" width="8rem" />
-            <PhoneIcon boxSize="2rem" marginBottom="0.5rem" />
-            <Text>+34 629 644 848</Text>
-            <Divider margin="0.5rem 0rem" width="8rem" />
-            <EmailIcon boxSize="2rem" marginBottom="0.5rem" />
-            <Text wordBreak="break-word">
-              javier.sepulveda.verdugo@gmail.com
-            </Text>
+          <HeadingCV borderLeft={true} variant="light">
+            LANGUAGES
+          </HeadingCV>
+          <Flex direction="row" flexWrap="wrap" style={{ gap: "0.5rem" }}>
+            <Badge>English (C1 Cambridge)</Badge>
+            <Badge>Spansih (Native)</Badge>
           </Flex>
-          <HeadingCV variant="light">EDUCATION</HeadingCV>
+          <HeadingCV borderLeft={true} variant="light">
+            SKILLS
+          </HeadingCV>
+          <Flex direction="row" flexWrap="wrap" style={{ gap: "0.5rem" }}>
+            <Badge>Java</Badge>
+            <Badge>Kotlin</Badge>
+            <Badge>Typescript</Badge>
+            <Badge>Node.js</Badge>
+            <Badge>React</Badge>
+            <Badge>AWS</Badge>
+            <Badge>Github</Badge>
+            <Badge>Gitlab</Badge>
+            <Badge>Unity</Badge>
+            <Badge>3D modelling</Badge>
+            <Badge>JIRA</Badge>
+          </Flex>
+          <HeadingCV borderLeft={true} variant="light">
+            EDUCATION
+          </HeadingCV>
           <Flex
             flexDirection="column"
             justifyContent="center"
@@ -66,12 +77,33 @@ export function ContactEducationAndSkills() {
             <Text fontStyle="italic">2011 - 2016</Text>
           </Flex>
 
-          <HeadingCV variant="light">SKILLS</HeadingCV>
-          <Text>Cambridge C1 Advanced</Text>
-          <Text>AWS Cloud</Text>
-          <Text>Java / Kotlin</Text>
-          <Text>Typescript + Node.js + React</Text>
-          <Text>Unity (iOS / Android / WebGL)</Text>
+          <HeadingCV borderLeft={true} variant="light">
+            CONTACT
+          </HeadingCV>
+          <Flex
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            height="10rem"
+            textAlign="center"
+            paddingRight="0.5rem"
+          >
+            <ChatIcon boxSize="1rem" marginBottom="0.5rem" />
+            <Link
+              href="https://www.linkedin.com/in/javier-sepulveda-verdugo/"
+              target="_blank"
+            >
+              My LinkedIn <ExternalLinkIcon mx="2px" />
+            </Link>
+            <Divider margin="0.5rem 0rem" width="8rem" />
+            <PhoneIcon boxSize="1rem" marginBottom="0.5rem" />
+            <Text>+34 629 644 848</Text>
+            <Divider margin="0.5rem 0rem" width="8rem" />
+            <EmailIcon boxSize="1rem" marginBottom="0.5rem" />
+            <Text wordBreak="break-word">
+              javier.sepulveda.verdugo@gmail.com
+            </Text>
+          </Flex>
         </Flex>
       </GridItem>
     </>

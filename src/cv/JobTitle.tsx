@@ -11,7 +11,7 @@ interface JobTitleProps {
 export const JobTitle: React.FC<JobTitleProps> = (props) => {
   return (
     <Box width="100%" position="relative" marginTop="1rem" marginBottom="1rem">
-      <Flex justifyContent="space-between" gap="10px" marginRight="3.5rem">
+      <Flex justifyContent="space-between" gap="10px" marginRight="0.5rem">
         <Text
           height="1rem"
           marginRight="1rem"
@@ -30,8 +30,8 @@ export const JobTitle: React.FC<JobTitleProps> = (props) => {
       <Box
         position="absolute"
         top="-0.5rem"
-        right="4rem"
-        fontStyle="italic"
+        right="1rem"
+        
         fontSize="0.6rem"
       >
         {props.end}
@@ -39,8 +39,8 @@ export const JobTitle: React.FC<JobTitleProps> = (props) => {
       <Box
         position="absolute"
         top="0.6rem"
-        right="4rem"
-        fontStyle="italic"
+        right="1rem"
+        
         fontSize="0.6rem"
       >
         {props.start}

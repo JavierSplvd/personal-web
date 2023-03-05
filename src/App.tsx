@@ -3,6 +3,7 @@ import HomeRoot from "./home/HomeRoot";
 import { color1 } from "./home/colors";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Curriculum } from "./cv/Curriculum";
+import { theme } from "./config/theme";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <RouterProvider router={router} />
     </ChakraProvider>
   );
