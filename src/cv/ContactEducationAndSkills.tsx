@@ -5,7 +5,7 @@ import {
   PhoneIcon,
 } from "@chakra-ui/icons";
 import { Badge, Divider, Flex, GridItem, Link, Text } from "@chakra-ui/react";
-import { color2 } from "../home/colors";
+import { color4 } from "../home/colors";
 import { HeadingCV } from "./HeadingCV";
 
 export function ContactEducationAndSkills() {
@@ -14,11 +14,11 @@ export function ContactEducationAndSkills() {
       <GridItem
         rowSpan={1}
         colSpan={1}
-        bg={color2}
-        color="white"
         fontSize="0.7rem"
         paddingLeft="2rem"
-        paddingTop="1rem"
+        paddingTop="2rem"
+        borderRight="2px solid"
+        borderRightColor={color4}
       >
         <Flex flexDirection="column">
           <HeadingCV borderLeft={true} variant="light">
@@ -31,7 +31,12 @@ export function ContactEducationAndSkills() {
           <HeadingCV borderLeft={true} variant="light">
             SKILLS
           </HeadingCV>
-          <Flex direction="row" flexWrap="wrap" style={{ gap: "0.5rem" }}>
+          <Flex
+            direction="row"
+            flexWrap="wrap"
+            style={{ gap: "0.5rem" }}
+            marginRight="0.5rem"
+          >
             <Badge>Java</Badge>
             <Badge>Kotlin</Badge>
             <Badge>C#</Badge>
@@ -58,9 +63,7 @@ export function ContactEducationAndSkills() {
             textAlign="center"
             paddingRight="0.5rem"
           >
-            <Text>
-              Master Civil Engineering (UPM)
-            </Text>
+            <Text>Master Civil Engineering (UPM)</Text>
             <Text fontStyle="italic">2016 - 2018</Text>
             <Divider margin="0.5rem 0rem" width="8rem" />
 

@@ -46,7 +46,6 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           height="80%"
           templateRows="repeat(1, 1fr)"
           templateColumns="repeat(3, 1fr)"
-          gap={4}
         >
           <ContactEducationAndSkills />
           <AboutAndExperience />

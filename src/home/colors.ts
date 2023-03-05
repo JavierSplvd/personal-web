@@ -1,5 +1,5 @@
 export const color1 = "white";
 export const color1alpha = "#2F506111";
-export const color2 = "#31312f";
-export const color3 = "#6667ab";
-export const color4 = "#eceef9";
+export const color2 = "#36343b";
+export const color3 = "#466fd6";
+export const color4 = "#a6c2e2";

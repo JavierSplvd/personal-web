@@ -15,7 +15,7 @@ export const HeadingCV: React.FC<HeadingCVProps> = (props) => {
         fontSize="1rem"
         letterSpacing="0.1rem"
         width="100%"
-        maxWidth="15rem"
+        maxWidth="25rem"
         backgroundColor={props.variant === "light" ? color4 : color2}
         color={props.variant === "light" ? "#172123" : "white"}
         borderLeftRadius={props.borderLeft ? "0.5rem" : ""}
