@@ -35,7 +35,7 @@ export const Curriculum: React.FC<{}> = (props: any) => {
             fontSize="3.5rem"
             fontFamily="Noto Sans TC"
           >
-            JAVIER SEPÚLVEDA
+            JAVIER SEPULVEDA
           </Heading>
           <Text letterSpacing="0.22rem">
             <b>FULLSTACK DEVELOPER</b> - 5 YEARS OF EXPERIENCE
