@@ -25,7 +25,7 @@ export const Curriculum: React.FC<{}> = (props: any) => {
         <Flex
           id="header"
           width="100%"
-          height="20%"
+          height="18%"
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
@@ -43,7 +43,7 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           </Text>
         </Flex>
         <Grid
-          height="80%"
+          height="82%"
           templateRows="repeat(1, 1fr)"
           templateColumns="repeat(3, 1fr)"
         >
