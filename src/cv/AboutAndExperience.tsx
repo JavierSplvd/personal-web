@@ -41,7 +41,7 @@ export function AboutAndExperience() {
           <Text>
             I managed the <b>development and release</b> of multiple
             applications within a short scope of time. This applications improve
-            the workflows of other Arup teams, incluiding teams from other
+            the workflows of other Arup teams, including teams from other
             offices. The stack of technologies is Node.js with Express, React
             with Redux, PostgreSQL database and the AWS cloud. The CI/CD was
             handled with Github Actions.
@@ -51,7 +51,7 @@ export function AboutAndExperience() {
             Development of <b>microservices using Springboot</b> with JPA
             (hibernate) to create a digital twin platform for buildings. I
             worked closely with the London team remotely. These microservices
-            deal with realtime data from devices (temperature, sound, energy
+            deal with real time data from devices (temperature, sound, energy
             consumption) and make some processing or handle notifications.
           </Text>
           <Divider margin="0.5rem 0rem" />
@@ -70,7 +70,7 @@ export function AboutAndExperience() {
             start="2019"
           ></JobTitle>
           <Text>
-            Developing an application for solar panels instalations, for
+            Developing an application for solar panels installations, for
             individual customers and for business. The application was a web app
             available to iOS and Android. I had a full stack role with Angular
             on the front and Kotlin on the back. For the persistence layer I
@@ -92,7 +92,7 @@ export function AboutAndExperience() {
             start="2018"
           ></JobTitle>
           <Text>
-            Developing automation scripts (Python) for the seismic assesment of
+            Developing automation scripts (Python) for the seismic assessment of
             structures and foundations in the Netherlands. These scripts
             leverage the APIs of different geotechnical applications to
             streamline the calculations.
