@@ -1,4 +1,4 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Navbar from "./Navbar";
 import Renderer from "./Renderer";
 
@@ -7,9 +7,6 @@ const HomeRoot = () => {
     <Box>
       <Navbar />
       <Renderer />
-      <Container paddingTop="3rem">
-        <Box zIndex={10} position="relative"></Box>
-      </Container>
     </Box>
   );
 };

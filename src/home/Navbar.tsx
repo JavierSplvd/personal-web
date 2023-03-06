@@ -1,27 +1,12 @@
 import {
-  Box,
-  Flex,
-  Text,
-  IconButton,
-  Stack,
-  Collapse,
-  Icon,
-  Link,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  useColorModeValue,
-  useBreakpointValue,
-  useDisclosure,
-} from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
   ChevronDownIcon,
-  ChevronRightIcon,
+  ChevronRightIcon, CloseIcon, ExternalLinkIcon, HamburgerIcon
 } from "@chakra-ui/icons";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { color1alpha, color2, color3, color4 } from "./colors";
+import {
+  Box, Collapse, Flex, Icon, IconButton, Link,
+  Popover, PopoverContent, PopoverTrigger, Stack, Text, useColorModeValue, useDisclosure
+} from "@chakra-ui/react";
+import { color2, color3, color4 } from "./colors";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -53,16 +38,7 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily="Nunito"
-          >
-            Javier Sepúlveda
-          </Text>
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
-          </Flex>
         </Flex>
       </Flex>
 

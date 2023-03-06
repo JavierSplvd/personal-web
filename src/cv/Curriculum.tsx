@@ -1,11 +1,22 @@
-import { Box, Flex, Grid, Heading, Link, Text } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Flex,
+  Grid,
+  Heading,
+  Link,
+  Text,
+  useColorMode
+} from "@chakra-ui/react";
 import React from "react";
 import { color4 } from "../home/colors";
-import { ContactEducationAndSkills } from "./ContactEducationAndSkills";
 import { AboutAndExperience } from "./AboutAndExperience";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ContactEducationAndSkills } from "./ContactEducationAndSkills";
 
 export const Curriculum: React.FC<{}> = (props: any) => {
+  const { setColorMode } = useColorMode();
+  setColorMode("light");
+
   return (
     <Flex
       minWidth="21cm"
@@ -31,10 +42,7 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           alignItems="center"
           backgroundColor={color4}
         >
-          <Heading
-            fontSize="3.5rem"
-            fontFamily="Noto Sans TC"
-          >
+          <Heading fontSize="3.5rem" fontFamily="Noto Sans TC">
             JAVIER SEPULVEDA
           </Heading>
           <Text letterSpacing="0.22rem">
