@@ -86,21 +86,20 @@ export function AboutAndExperience() {
           </Text>
         </Box>
         <Box marginLeft="2rem">
-          <JobTitle
-            title="GEOTECHNICS ENGINEER, ARUP"
-            end="2019"
-            start="2018"
-          ></JobTitle>
+          <JobTitle title="ENGINEER, ARUP" end="2019" start="2018"></JobTitle>
           <Text>
-            Developing automation scripts (Python) for the seismic assessment of
-            structures and foundations in the Netherlands. These scripts
-            leverage the APIs of different geotechnical applications to
-            streamline the calculations.
+            I was responsible of the gathering, processing and analysis of
+            traffic data. The data was mainly from the city of Madrid but also
+            for other national highways north of Spain. This data was cleaned
+            and inserted on a database for further analysis. This analysis was
+            done with the transport team of the office and helped them on their
+            workflows.
           </Text>
           <Divider margin="0.5rem 0rem" />
           <Text>
-            I was responsible of the gathering and processing of open traffic data from Madrid to
-            support the Transport team.
+            I created scripts to automate calculations for the geotechnics team
+            related to seismic engineering and made use of the APIs of multiple
+            FEM applications.
           </Text>
         </Box>
       </GridItem>
