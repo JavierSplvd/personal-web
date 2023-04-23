@@ -90,7 +90,7 @@ export function AboutAndExperience() {
           <Text>
             I was responsible of the gathering, processing and analysis of
             traffic data. The data was mainly from the city of Madrid but also
-            for other national highways north of Spain. This data was cleaned
+            from other national highways north of Spain. This data was cleaned
             and inserted on a database for further analysis. This analysis was
             done with the transport team of the office and helped them on their
             workflows.
