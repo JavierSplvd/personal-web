@@ -2,6 +2,7 @@ import { Box, ChakraProvider } from "@chakra-ui/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { theme } from "./config/theme";
 import { Curriculum } from "./cv/Curriculum";
+import { DanceListView } from "./dance/DanceListView";
 import { color1 } from "./home/colors";
 import HomeRoot from "./home/HomeRoot";
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/cv",
     element: <Curriculum />,
+  },
+  {
+    path: "dance",
+    element: <DanceListView />,
   },
 ]);
 
