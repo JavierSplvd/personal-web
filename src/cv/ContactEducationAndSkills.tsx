@@ -37,18 +37,19 @@ export function ContactEducationAndSkills() {
             style={{ gap: "0.5rem" }}
             marginRight="0.5rem"
           >
-            <Badge>Java</Badge>
+            <Badge>Java 11</Badge>
+            <Badge>Java 17</Badge>
             <Badge>Kotlin</Badge>
-            <Badge>C#</Badge>
+            <Badge>PostgreSQL</Badge>
+            <Badge>AWS</Badge>
+            <Badge>React</Badge>
             <Badge>Node.js</Badge>
             <Badge>Typescript</Badge>
-            <Badge>React</Badge>
             <Badge>Angular</Badge>
-            <Badge>AWS</Badge>
             <Badge>Github</Badge>
             <Badge>Gitlab</Badge>
-            <Badge>Unity</Badge>
-            <Badge>3D modelling</Badge>
+            <Badge>Unity (C#)</Badge>
+            <Badge>MongoDB</Badge>
             <Badge>JIRA</Badge>
             <Badge>Figma</Badge>
           </Flex>

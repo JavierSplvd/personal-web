@@ -63,6 +63,7 @@ export const Curriculum: React.FC<{}> = (props: any) => {
           right="2rem"
           fontStyle="italic"
           fontSize="0.6rem"
+          color="gray.500"
         >
           Created with React+Chakra-UI (
           <Link href="https://github.com/JavierSplvd/personal-web">

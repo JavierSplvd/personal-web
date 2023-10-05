@@ -6,7 +6,7 @@ export const theme = extendTheme({
   components: {
     Badge: {
       baseStyle: {
-        backgroundColor: "white",
+        backgroundColor: "gray.200",
         height: "1.5rem",
         padding: "0.4rem",
         fontSize: "0.7rem",

@@ -1,10 +1,24 @@
 import {
   ChevronDownIcon,
-  ChevronRightIcon, CloseIcon, ExternalLinkIcon, HamburgerIcon
+  ChevronRightIcon,
+  CloseIcon,
+  ExternalLinkIcon,
+  HamburgerIcon,
 } from "@chakra-ui/icons";
 import {
-  Box, Collapse, Flex, Icon, IconButton, Link,
-  Popover, PopoverContent, PopoverTrigger, Stack, Text, useColorModeValue, useDisclosure
+  Box,
+  Collapse,
+  Flex,
+  Icon,
+  IconButton,
+  Link,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  Stack,
+  Text,
+  useColorModeValue,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { color2, color3, color4 } from "./colors";
 
@@ -38,7 +52,7 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <DesktopNav />
+          <DesktopNav />
         </Flex>
       </Flex>
 
@@ -236,11 +250,6 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   }, */
   {
-    label: "Videogames",
-    href: "https://numian.itch.io/",
-    external: true,
-  },
-  {
     label: "Github",
     href: "https://github.com/JavierSplvd",
     external: true,
@@ -248,11 +257,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/javier-sepulveda-verdugo/",
-    external: true,
-  },
-  {
-    label: "Art",
-    href: "https://www.instagram.com/javier.splvd.art/",
     external: true,
   },
   {
