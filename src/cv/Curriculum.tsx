@@ -70,7 +70,7 @@ export const Curriculum: React.FC<{}> = (props: any) => {
             Github
             <ExternalLinkIcon mx="2px" />
           </Link>
-          <Link href="https://www.javiersepulveda.es/cv">
+          <Link href="https://www.javierdev.net/cv">
             Web
             <ExternalLinkIcon mx="2px" />
           </Link>
