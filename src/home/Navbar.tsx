@@ -20,7 +20,7 @@ import {
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import { color2, color3, color4 } from "./colors";
+import { color1alpha, color2, color3, color4 } from "./colors";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -35,6 +35,7 @@ export default function Navbar() {
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
+        backgroundColor={color1alpha}
         align={"center"}
       >
         <Flex
