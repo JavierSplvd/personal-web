@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { theme } from "./config/theme";
 import { Curriculum } from "./cv/Curriculum";
 import { DanceListView } from "./dance/DanceListView";
+import { TitlePage } from "./evangelion/TitlePage";
 import { color1 } from "./home/colors";
 import HomeRoot from "./home/HomeRoot";
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "dance",
     element: <DanceListView />,
+  },
+  {
+    path: "eva",
+    element: <TitlePage />,
   },
 ]);
 

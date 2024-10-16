@@ -1,4 +1,8 @@
-import { NavItem } from "./Navbar";
+interface NavItem {
+  label: string;
+  href: string;
+  external: boolean;
+}
 
 export const NAV_ITEMS: Array<NavItem> = [
   /* {
