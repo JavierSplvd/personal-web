@@ -33,7 +33,7 @@ export const TitlePage: React.FC = () => {
           sx={{
             color: "white",
             fontSize: "3rem",
-            fontWeight: 600,
+            fontWeight: 300,
             marginTop: "-0.5rem",
           }}
         >
@@ -43,6 +43,7 @@ export const TitlePage: React.FC = () => {
           sx={{
             color: "white",
             fontSize: "3rem",
+            fontFamily: "Noto Sans, sans-serif",
             textAlign: "end",
             marginTop: "1rem",
           }}
