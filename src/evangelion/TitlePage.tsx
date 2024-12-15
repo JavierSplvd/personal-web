@@ -6,55 +6,64 @@ export const TitlePage: React.FC = () => {
   const title1 = urlParams.get("title1") || "TAIPEI";
   const title2 = urlParams.get("title2");
   const title3 = urlParams.get("title3");
-  const isLongTitle = title1.length > 9;
+  const isLongTitle = title1.length >= 9;
+  const titleStyle: React.CSSProperties = {
+    color: "white",
+    lineHeight: "3rem",
+    fontSize: isLongTitle ? "2rem" : "2.8rem",
+    letterSpacing: "0.1rem",
+    textTransform: "uppercase",
+  };
   return (
     <Box
       sx={{
         backgroundColor: "black",
-        padding: "2rem",
-        paddingTop: "8rem",
+        padding: "6rem 2rem",
         width: "100vw",
         height: "100vh",
         fontFamily: "Noto Serif, serif",
         overflowY: "hidden",
       }}
     >
-      <Box sx={{ position: "relative", height: "100%" }}>
-        <Box
-          sx={{
-            color: "white",
-            height: "6rem",
-            fontSize: isLongTitle ? "3.3rem" : "4rem",
-            letterSpacing: "0.1rem",
-          }}
-        >
-          <Box sx={{ transform: isLongTitle ? "scaleY(1.5)" : "scaleY(2)" }}>{title1}</Box>
+      <Box
+        sx={{ position: "relative", height: "100%", border: "0px solid pink" }}
+      >
+        <Box sx={titleStyle}>
+          <Box sx={{ transform: isLongTitle ? "scaleY(1.5)" : "scaleY(2)" }}>
+            {title1}
+          </Box>
         </Box>
         <Box
           sx={{
-            color: "white",
-            fontSize: "3rem",
-            fontWeight: 300,
-            marginTop: "-0.5rem",
+            ...titleStyle,
+            position: "absolute",
+            top: 0,
+            right: 0,
+            writingMode: "vertical-rl",
+            textOrientation: "upright",
           }}
         >
           {title2 || "臺北"}
         </Box>
         <Box
-          sx={{
-            position: "absolute",
-            bottom: "20rem",
-            right: 0,
-            color: "white",
-            fontSize: "3rem",
-            fontFamily: "Noto Sans, sans-serif",
-            textAlign: "end",
-            marginTop: "1rem",
-            writingMode: "tb-rl",
-            transform: "rotate(-180deg)",
-          }}
+          sx={{ ...titleStyle, position: "absolute", bottom: "0rem", right: 0 }}
         >
           {title3 || "Day 1"}
+        </Box>
+        <Box
+          sx={{
+            fontFamily: "Noto Sans, sans-serif",
+            fontSize: "12rem",
+            transform: "rotate(-25deg)",
+            color: "red",
+            position: "absolute",
+            top: "0rem",
+            right: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+          }}
+        >
+          {title2 || "臺北"}
         </Box>
       </Box>
     </Box>
