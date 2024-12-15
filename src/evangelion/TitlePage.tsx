@@ -41,6 +41,7 @@ export const TitlePage: React.FC = () => {
             right: 0,
             writingMode: "vertical-rl",
             textOrientation: "upright",
+            fontFamily: "Noto Sans, sans-serif",
           }}
         >
           {title2 || "臺北"}
@@ -52,7 +53,7 @@ export const TitlePage: React.FC = () => {
         </Box>
         <Box
           sx={{
-            fontFamily: "Noto Sans, sans-serif",
+            fontFamily: "Noto Sans, serif",
             fontSize: "12rem",
             transform: "rotate(-25deg)",
             color: "red",
